@@ -19,3 +19,16 @@ Detailed objectives:
 - Implement text-to-speech functionality to allow the assistant to communicate with users through voice output
 - Combine all of the above components to create a functional assistant that can take voice input and provide a spoken response
 - Deploy as web application by running a server in development mode
+
+For reference: https://github.com/ibm-developer-skills-network/translator-with-voice-and-watsonx
+
+Set Environment:
+```
+python3.11 -m venv my_env
+source my_env/bin/activate # activate my_env
+```
+
+Install requirements:
+```
+pip install -r requirements.txt
+```
