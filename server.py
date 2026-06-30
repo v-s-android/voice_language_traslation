@@ -16,7 +16,11 @@ def index():
 
 @app.route('/speech-to-text', methods=['POST'])
 def speech_to_text_route():
-    return None
+    print("processing Speech-to-Text")
+    audio_binary = request.data  # Get the user's speech from their request
+    text = speech_to_text(audio_binary) # Call speech_to_text function to transcribe the speech
+
+    response = app
 
 
 @app.route('/process-message', methods=['POST'])
